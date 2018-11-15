@@ -189,7 +189,7 @@ GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, 3);
 
 效果:
 
-![image](//wx3.sinaimg.cn/large/958c5b69ly1fx8wxb0i1rj20k612gab8.jpg)
+![image](http://wx3.sinaimg.cn/large/958c5b69ly1fx8wxb0i1rj20k612gab8.jpg)
 
 
 代码地址
