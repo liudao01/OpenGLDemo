@@ -18,7 +18,7 @@ public class XYGLSurfaceView extends GLSurfaceView {
         super(context, attrs);
         //设置OpenGL版本
         setEGLContextClientVersion(2);
-        setRenderer(new XYRender(getContext()));
+        setRenderer(new XYRenderQuadrilateral(getContext()));
 
     }
 }

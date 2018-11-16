@@ -16,7 +16,7 @@ import javax.microedition.khronos.opengles.GL10;
  * @explain
  * @time 2018/11/15 11:19
  */
-public class XYRender implements GLSurfaceView.Renderer {
+public class XYRenderTriangle implements GLSurfaceView.Renderer {
 
     private Context context;
     private final  float[] vertexData={
@@ -30,7 +30,7 @@ public class XYRender implements GLSurfaceView.Renderer {
     private int avPosition;
     private int afColor;
 
-    public XYRender(Context context){
+    public XYRenderTriangle(Context context){
         this.context = context;
         vertexBuffer = ByteBuffer.allocateDirect(vertexData.length * 4)
                 .order(ByteOrder.nativeOrder())
