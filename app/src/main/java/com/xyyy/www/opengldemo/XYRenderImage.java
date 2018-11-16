@@ -30,12 +30,19 @@ public class XYRenderImage implements GLSurfaceView.Renderer {
             1f,1f
     };
 
-    //纹理坐标
+    //纹理坐标  正常
+//    private final float[] textureData={
+//            0f,1f,
+//            1f,1f,
+//            0f,0f,
+//            1f,0f
+//    };
+    //纹理坐标 倒立
     private final float[] textureData={
-            0f,1f,
-            1f,1f,
+            1f,0f,
             0f,0f,
-            1f,0f
+            1f, 1f,
+            0f, 1f
     };
 
 
