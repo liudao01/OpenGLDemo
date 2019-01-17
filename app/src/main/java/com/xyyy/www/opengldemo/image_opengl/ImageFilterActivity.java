@@ -12,6 +12,8 @@ public class ImageFilterActivity extends AppCompatActivity {
     private Button btUseFilter;
     private MyView myview;
 
+    int type = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +28,7 @@ public class ImageFilterActivity extends AppCompatActivity {
         btUseFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                myview.
+                myview.setFilter(type++);
             }
         });
     }

@@ -12,6 +12,7 @@ import android.util.AttributeSet;
 public class MyView extends GLSurfaceView {
 
 
+    private MyViewRender render;
 
     public MyView(Context context) {
         super(context, null);
@@ -20,7 +21,17 @@ public class MyView extends GLSurfaceView {
     public MyView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setEGLContextClientVersion(2);
-        setRenderer(new MyViewRender(getContext()));
+//        setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+        render = new MyViewRender(getContext());
+        setRenderer(render);
+        setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+    }
+
+    public void setFilter(int type) {
+        if (render != null) {
+            render.setType(type);
+            requestRender();//手动刷新 调用一次
+        }
     }
 
 
