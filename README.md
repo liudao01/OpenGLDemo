@@ -10,7 +10,7 @@ OpenGLDemo
 不管在什么屏幕或者设备 都会映射到这个坐标系上
 比如想绘制上半区域 那就从左边的-1 到右边的 1 从0.0 到1.0
 
-![image](//ws3.sinaimg.cn/large/958c5b69ly1fx8peigm2cj20ns0nuwhe.jpg)
+![image](http://ws3.sinaimg.cn/large/958c5b69ly1fx8peigm2cj20ns0nuwhe.jpg)
 
 更加详细的可以看这个文章
 https://blog.piasy.com/2016/06/07/Open-gl-es-android-2-part-1/
