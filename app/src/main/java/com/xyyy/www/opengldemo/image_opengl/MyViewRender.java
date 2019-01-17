@@ -94,6 +94,7 @@ public class MyViewRender implements GLSurfaceView.Renderer {
 
     }
 
+
     private int getCurrentProgram( int type) {
         String vertexSource = XYShaderUtil.readRawText(context, R.raw.img_vertex_shader);
         String fragmentSource;
