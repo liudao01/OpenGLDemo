@@ -59,12 +59,16 @@ public class XYShaderUtil {
         if (fragmentShader == 0) {
             return 0;
         }
+        //创建一个渲染程序
         int program = GLES20.glCreateProgram();
         if (program != 0) {
+            //将着色器程序添加到渲染程序中
             GLES20.glAttachShader(program,vertexShader);
             GLES20.glAttachShader(program,fragmentShader);
+            //链接源程序
             GLES20.glLinkProgram(program);
             int[] lineSatus = new int[1];
+            //检查链接源程序是否成功
             GLES20.glGetProgramiv(program, GLES20.GL_LINK_STATUS, lineSatus, 0);
             if (lineSatus[0] != GLES20.GL_TRUE) {
                 LogUtil.e("link program error");
