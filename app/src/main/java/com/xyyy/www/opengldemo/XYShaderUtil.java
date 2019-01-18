@@ -31,6 +31,12 @@ public class XYShaderUtil {
         return sb.toString();
     }
 
+    /**
+     * 加载shader
+     * @param shaderType
+     * @param source
+     * @return
+     */
     public static int loadShader(int shaderType, String source) {
 
         int shader = GLES20.glCreateShader(shaderType);
